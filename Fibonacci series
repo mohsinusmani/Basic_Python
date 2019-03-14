@@ -1,0 +1,15 @@
+x=10
+first_term = 1
+second_term = 1
+nxt_term = 0
+i=0
+if x==1:
+    print("fibonacci series is:",first_term)
+else:
+    print("fibonacci series is:\n"+str(first_term)+"\n"+str(second_term))
+    while i<x-2:
+        nxt_term = first_term + second_term
+        print(nxt_term)
+        first_term = second_term
+        second_term = nxt_term
+        i=i+1

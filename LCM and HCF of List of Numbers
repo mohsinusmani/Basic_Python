@@ -18,6 +18,15 @@ for i in x:
         count = count+1
     else:
         hcf = list(set(hcf).intersection(set(factor)))
-    lcm = list(set(lcm).union(set(factor)))
+    
 print(hcf)
-print(lcm)
+hcf1 =1
+for l in hcf:
+    hcf1= hcf1*l
+print("HCF is:",hcf1)
+mul =1
+for m in x:
+    mul= mul*m
+print(mul)
+lcm1=mul/hcf1
+print("LCM is:",lcm1)

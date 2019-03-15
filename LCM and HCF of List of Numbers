@@ -1,0 +1,23 @@
+x= [2,4,6,8]
+hcf=[]
+lcm=[]
+count = 0
+for i in x:
+    factor=[]
+    for j in range(1,i+1):
+        if i%j==0:
+            prime=1
+            for k in range(2,j):
+                if j%k==0:
+                    prime=0
+            if prime==1:
+                factor.append(j)
+    if count == 0:
+        
+        hcf = factor
+        count = count+1
+    else:
+        hcf = list(set(hcf).intersection(set(factor)))
+    lcm = list(set(lcm).union(set(factor)))
+print(hcf)
+print(lcm)
